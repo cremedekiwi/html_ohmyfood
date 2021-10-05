@@ -1,0 +1,49 @@
+.resto {
+  width: 100%;
+  height: 1226px;
+  background-color: $grey;
+  h1 {
+    padding: 58px 0 27px 21px;
+  }
+  &__w {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  &__card {
+    width: 335px;
+    height: 251px;
+    background-color: white;
+    border-radius: 14px;
+    img {
+      width: 335px;
+      height: 174px;
+      object-fit: cover;
+      border-radius: 14px 14px 0 0;
+    }
+  }
+  &__card__img {
+    display: block;
+    position: relative;
+  }
+  &__card__new {
+    width: 81px;
+    height: 29px;
+    padding: 8px 0 0 15px;
+    font-size: 13px;
+    background-color: #99E2D0;
+    color: #008766;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    padding: 0 24px 0 14px;
+  }
+}
