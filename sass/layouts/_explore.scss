@@ -21,14 +21,9 @@
       height: 287px;
       text-align: center;
       background-color: $grey;
-      button {
+      .explorer {
         width: 219px;
         height: 50px;
-        border-radius: 25px;
-        background: linear-gradient(#f175da, #9e59dc);
-        box-shadow: 1px 1px 8px grey;
-        color: white;
-        border: 0;
       }
       h1 {
         padding: 0 81px 0 65px;

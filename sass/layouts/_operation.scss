@@ -4,7 +4,7 @@
     h1 {
       padding: 52px 0 32px 21px;
     }
-    &__wrapper {
+    &__w {
       @include center;
       flex-direction: column;
       gap: 25px;
@@ -12,6 +12,7 @@
         width: 321px;
         height: 74px;
         background-color: $grey;
+        box-shadow: 4px 4px 8px #e5e5e5;
         @include center;
         border-radius: 19px;
         position: relative;
@@ -21,7 +22,7 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background-color: $purple;
+        background-color: $primary;
         color: white;
         @include center;
         position: absolute;

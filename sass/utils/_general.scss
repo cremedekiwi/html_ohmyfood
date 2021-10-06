@@ -8,12 +8,24 @@ header span {
   color: black;
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: 900;
+.operation, .resto {
+  h1 {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
 
-h2 {
-  font-size: 15px;
-  font-weight: bold;
+.operation {
+  h2 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
 }

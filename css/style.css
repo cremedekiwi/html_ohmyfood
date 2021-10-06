@@ -85,14 +85,31 @@ header span {
   color: black;
 }
 
-h1 {
+.operation h1, .resto h1 {
   font-size: 20px;
   font-weight: 900;
 }
 
-h2 {
+.operation h2 {
   font-size: 15px;
   font-weight: bold;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9356DC;
+}
+
+.button {
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 1px 1px 8px grey;
+  color: white;
+  border: 0;
 }
 
 header {
@@ -101,11 +118,14 @@ header {
 
 header span {
   width: 100%;
-  height: 62px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 5px grey;
+}
+
+.h_box-shadow {
+  box-shadow: 4px 4px 8px #cfcfcf;
 }
 
 .explore__where {
@@ -135,17 +155,12 @@ header span {
   gap: 20px;
   height: 287px;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
-.explore__book button {
+.explore__book .explorer {
   width: 219px;
   height: 50px;
-  border-radius: 25px;
-  background: linear-gradient(#f175da, #9e59dc);
-  box-shadow: 1px 1px 8px grey;
-  color: white;
-  border: 0;
 }
 
 .explore__book h1 {
@@ -167,7 +182,7 @@ header span {
   padding: 52px 0 32px 21px;
 }
 
-.operation__wrapper {
+.operation__w {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,10 +190,11 @@ header span {
   gap: 25px;
 }
 
-.operation__wrapper--button {
+.operation__w--button {
   width: 321px;
   height: 74px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
+  box-shadow: 4px 4px 8px #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,11 +203,11 @@ header span {
   gap: 20px;
 }
 
-.operation__wrapper--circle {
+.operation__w--circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: white;
   display: flex;
   justify-content: center;
@@ -201,14 +217,14 @@ header span {
   font-size: 11px;
 }
 
-.operation__wrapper i {
+.operation__w i {
   color: #7E7E7E;
 }
 
 .resto {
   width: 100%;
   height: 1226px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
 .resto h1 {
@@ -226,6 +242,7 @@ header span {
   width: 335px;
   height: 251px;
   background-color: white;
+  box-shadow: 4px 4px 8px #e5e5e5;
   border-radius: 14px;
 }
 
@@ -287,4 +304,95 @@ footer li {
 
 footer i {
   margin-right: 12px;
+}
+
+.menu img {
+  width: 375px;
+  height: 258px;
+  object-fit: cover;
+}
+
+.menu__w {
+  position: relative;
+  top: -38px;
+  margin-bottom: -38px;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 39px 39px 0 0;
+}
+
+.menu__w__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 41px 38px 0px 19px;
+}
+
+.menu__w__title--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__w__title .fa-heart {
+  transform: scale(1.6, 1.6);
+}
+
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: 36px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+
+.menu h3 {
+  font-weight: bold;
+}
+
+.menu p {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.meal {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice {
+  background-color: white;
+  width: 349px;
+  height: 68px;
+  border-radius: 14px;
+  box-shadow: 4px 4px 8px #e5e5e5;
+  padding: 15px 22px 0 10px;
+}
+
+.choice__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order_w {
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order_w .order {
+  width: 186px;
+  height: 50px;
 }
