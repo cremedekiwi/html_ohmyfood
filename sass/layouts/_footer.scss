@@ -20,4 +20,14 @@ footer {
 	i {
 		margin-right: 12px;
 	}
+  li a {
+    color: white;
+    text-decoration: none;
+    &:visited {
+      color: white;
+    }
+    &:hover {
+      color: $secondary;
+    }
+  }
 }
