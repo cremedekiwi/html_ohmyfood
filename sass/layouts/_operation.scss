@@ -18,8 +18,10 @@
         box-shadow: 4px 4px 8px #e5e5e5;
         @include center;
         border-radius: 19px;
-        position: relative;
         gap: 20px;
+      }
+      &--button:hover {
+        background-color: #f5edff;
       }
       &--circle {
         width: 24px;
@@ -28,7 +30,7 @@
         background-color: $primary;
         color: white;
         @include center;
-        position: absolute;
+        transform: translateX(-52px);
         left: -10px;
         font-size: 11px;
       }
