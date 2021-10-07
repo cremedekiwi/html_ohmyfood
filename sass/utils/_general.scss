@@ -3,7 +3,14 @@ body, input {
 }
 
 header, main, footer {
-  margin: 0 auto;
+  margin: auto;
+  @media screen and (min-width: 992px) {
+  border: 10px solid;
+  border-top: none;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
 }
 
 header span {

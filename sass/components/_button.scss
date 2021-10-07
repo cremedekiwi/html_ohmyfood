@@ -4,4 +4,8 @@
     box-shadow: 1px 1px 8px grey;
     color: white;
     border: 0;
+    &:hover {
+      filter: brightness(110%);
+      box-shadow: 2px 2px 10px grey;
+    }
   }
