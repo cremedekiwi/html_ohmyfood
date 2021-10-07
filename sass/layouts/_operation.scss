@@ -12,29 +12,31 @@
       }
       gap: 25px;
       &--button {
+        position: relative;
         width: 321px;
         height: 74px;
         background-color: $grey;
         box-shadow: 4px 4px 8px #e5e5e5;
         @include center;
         border-radius: 19px;
-        gap: 20px;
       }
       &--button:hover {
         background-color: #f5edff;
       }
       &--circle {
+        position: absolute;
+        left: -10px;
         width: 24px;
         height: 24px;
         border-radius: 50%;
         background-color: $primary;
         color: white;
         @include center;
-        transform: translateX(-52px);
-        left: -10px;
         font-size: 11px;
       }
       i {
+        padding-left: 0;
+        padding-right: 20px;
         color: #7E7E7E;
       }
     }

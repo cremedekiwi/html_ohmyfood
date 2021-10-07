@@ -228,6 +228,7 @@ header i {
 }
 
 .operation__w--button {
+  position: relative;
   width: 321px;
   height: 74px;
   background-color: #F6F6F6;
@@ -236,7 +237,6 @@ header i {
   justify-content: center;
   align-items: center;
   border-radius: 19px;
-  gap: 20px;
 }
 
 .operation__w--button:hover {
@@ -244,6 +244,8 @@ header i {
 }
 
 .operation__w--circle {
+  position: absolute;
+  left: -10px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -252,12 +254,12 @@ header i {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-52px);
-  left: -10px;
   font-size: 11px;
 }
 
 .operation__w i {
+  padding-left: 0;
+  padding-right: 20px;
   color: #7E7E7E;
 }
 
