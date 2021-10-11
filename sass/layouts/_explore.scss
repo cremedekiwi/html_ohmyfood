@@ -20,6 +20,9 @@
         &::placeholder {
           color: black;
         }
+        &:focus {
+          outline: none;
+        }
       }
     }
     &__book {
@@ -34,6 +37,8 @@
         height: 50px;
       }
       h1 {
+        font-weight: bold;
+        font-size: 20px;
         padding: 0 81px 0 65px;
       }
       p {
