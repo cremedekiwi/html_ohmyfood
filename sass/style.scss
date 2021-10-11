@@ -4,9 +4,12 @@
 @import "utils/mixin";
 @import "utils/typography";
 
+@import "components/loader";
+@import "components/invoke";
 @import "components/button";
 @import "components/heart";
 @import "components/choice";
+
 
 @import "layouts/header";
 @import "layouts/explore";

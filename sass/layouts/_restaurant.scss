@@ -34,10 +34,6 @@
       border-radius: 14px 14px 0 0;
     }
   }
-  &__card:hover {
-    transform: scale(1.05);
-    transition: ease-in-out 0.5s;
-  }
   &__card__img {
     display: block;
     position: relative;
