@@ -1,43 +1,52 @@
 .operation {
-    width: 100%;
-    padding: 52px 0 68px 0;
-    h2 {
-      padding: 0 0 32px 21px;
+  width: 100%;
+  padding: 52px 0 68px 0;
+  h2 {
+    padding: 0 0 32px 21px;
+  }
+  &__w {
+    @include center;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
     }
-    &__w {
+    gap: 25px;
+    &--button {
+      position: relative;
+      width: 85.86vw;
+      max-width: 322px;
+      height: 74px;
+      background-color: $grey;
+      box-shadow: 4px 4px 8px #e5e5e5;
       @include center;
-      flex-direction: column;
-      @media screen and (min-width: 992px) {
-        flex-direction: row;
+      border-radius: 19px;
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+        height: 60px;
       }
-      gap: 25px;
-      &--button {
-        position: relative;
-        width: 321px;
-        height: 74px;
-        background-color: $grey;
-        box-shadow: 4px 4px 8px #e5e5e5;
-        @include center;
-        border-radius: 19px;
-      }
-      &--button:hover {
-        background-color: #f5edff;
-      }
-      &--circle {
-        position: absolute;
-        left: -10px;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: $primary;
-        color: white;
-        @include center;
-        font-size: 11px;
-      }
-      i {
-        padding-left: 0;
-        padding-right: 20px;
-        color: #7E7E7E;
+    }
+    &--button:hover {
+      background-color: #f5edff;
+    }
+    &--circle {
+      position: absolute;
+      left: -10px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $primary;
+      color: white;
+      @include center;
+      font-size: 11px;
+    }
+    i {
+      padding-left: 0;
+      padding-right: 20px;
+      color: #7e7e7e;
+      @media screen and (min-width: $tablet) {
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
   }
+}

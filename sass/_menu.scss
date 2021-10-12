@@ -19,8 +19,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 38px 0px 19px;
-    @media screen and (min-width: 992px) {
+    padding: 0 10vw 0px 5vw; // 19px left 38px right
+    @media screen and (min-width: $desktop) {
       padding: 0 10vw 0 10vw;
     }
     &--icon {
@@ -29,7 +29,10 @@
   }
   h1 {
     font-family: "Shrikhand", cursive;
-    font-size: 25px;
+    font-size: 1.4rem;
+    @media screen and (min-width: 375px) {
+      font-size: 1.6rem; // 25px
+    }
     font-weight: 100;
   }
   h2 {
@@ -37,8 +40,17 @@
     font-size: 14px;
     font-weight: 100;
     margin-left: 20px;
-    @media screen and (min-width: 992px) {
-      margin-left: 13vw;
+    @media screen and (min-width: 600px) {
+      margin-left: 20vw;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-left: 4vw;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-left: 18vw;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-left: 10vw;
     }
     margin-top: 36px;
     border-bottom: 3px solid $tertiary;
@@ -57,8 +69,8 @@
   height: 154px;
   @include center;
   .order {
-  width: 186px;
-  height: 50px;
+    width: 186px;
+    height: 50px;
   }
 }
 
@@ -68,10 +80,13 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $tablet) {
     flex-direction: row;
-    padding: 0 8vw 0 8vw;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 1400px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1420px;
+    // width: 1400px;
   }
 }

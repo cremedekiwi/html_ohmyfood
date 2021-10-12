@@ -1,65 +1,48 @@
-@keyframes loaderColor{
-    0% {
-        background-color: $primary;
-    }
-    50% {
-        background-color: $secondary;
-    }
-    100% {
-        background-color: $primary;
-    }
+@keyframes loaderColor {
+  0% {
+    background-color: $primary;
+  }
+  25% {
+    background-color: $secondary;
+  }
+  50% {
+    background-color: $tertiary;
+  }
+  75% {
+    background-color: $secondary;
+  }
+  100% {
+    background-color: $primary;
+  }
 }
 
 @keyframes loaderKick {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        height: 0;
-        width: 0;
-    }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-@keyframes peekaboo {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        transform: translate(-100vw, -100vh);
-    }
-    100% {
-        opacity: 1;
-        height: 100%;
-        width: 100%;
-    }
-}
-
-#loader_w {
-    display: none;
-    z-index: 100;
-    background-color: #f6f6f6;
-    width: 100vw;
-    height: 100vh;
-    @include center;
-    flex-direction: column;
-    gap: 10px;
-    p {
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    animation: loaderKick 0.001s ease forwards 3s;
-}
-
-#loader {
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $grey;
+  @include center;
+  flex-direction: column;
+  gap: 10px;
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  animation: loaderKick 0.4s ease forwards 3s;
+  &__color {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    animation: loaderColor 2s linear;
-}
-
-#content {
-    z-index: 1;
-    animation: peekaboo 0.001s ease backwards 3s;
+    animation: loaderColor 3s ease-in;
+  }
 }

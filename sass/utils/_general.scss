@@ -3,7 +3,7 @@ main,
 footer {
   max-width: 1440px;
   margin: auto;
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: $desktop) {
     border: 10px solid;
     border-top: none;
     border-image-slice: 1;

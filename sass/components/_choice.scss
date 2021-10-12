@@ -1,6 +1,7 @@
 .choice {
   background-color: white;
-  width: 349px;
+  width: 93.066vw;
+  max-width: 349px;
   height: 68px;
   border-radius: 14px;
   box-shadow: 4px 4px 8px #e5e5e5;
@@ -8,22 +9,24 @@
   flex-direction: row;
   &__left {
     padding: 15px 0 0 11px;
-    width: 301px;
+    width: 80.266vw;
+    max-width: 301px;
     p {
       margin-top: 10px;
     }
-    h3, p {
-      overflow : hidden;
-      white-space : nowrap;
+    h3,
+    p {
+      overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
     }
   }
   &__middle {
-    width: 48px;
+    width: 12.8vw;
+    max-width: 48px;
     padding: 42px 22px 0 0;
   }
   &__right {
-    transform: translateX(59px);
     opacity: 0;
     width: 0;
     background-color: #99e2d0;
@@ -33,19 +36,41 @@
       color: white;
     }
   }
-  &:hover, &:active {
+  &:hover,
+  &:active {
     .choice__left {
-      width: 226px;
+      width: 60.266vw;
+      max-width: 226px;
     }
     .choice__middle {
-      width: 64px;
+      width: 17.066vw;
+      max-width: 64px;
       padding: 41px 22px 23px 16px;
     }
+    @keyframes reveal {
+      from {
+        clip-path: inset(0 0 0 100%);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
     .choice__right {
-      transform: translateX(0px);
-      transition: 0.3s;
-      width: 59px;
+      width: 15.733vw;
+      max-width: 59px;
       opacity: 1;
+      animation: reveal 0.3s forwards;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .fa-check-circle {
+      animation: rotate 0.5s ease-in-out forwards;
     }
   }
 }
