@@ -5,7 +5,8 @@
   color: white;
   border: 0;
   &:hover {
-    filter: brightness(110%);
-    box-shadow: 2px 2px 10px grey;
+    filter: brightness(115%);
+    box-shadow: 2px 2px 12px grey;
+    transition: 0.3s ease-in-out;
   }
 }

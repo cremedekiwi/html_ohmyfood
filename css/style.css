@@ -266,8 +266,9 @@ a {
 }
 
 .button:hover {
-  filter: brightness(110%);
-  box-shadow: 2px 2px 10px grey;
+  filter: brightness(115%);
+  box-shadow: 2px 2px 12px grey;
+  transition: 0.3s ease-in-out;
 }
 
 @keyframes pulse {
@@ -367,7 +368,7 @@ i.far {
   width: 15.733vw;
   max-width: 59px;
   opacity: 1;
-  animation: reveal 0.3s forwards;
+  animation: 0.3s alternate reveal;
 }
 
 @keyframes rotate {
@@ -380,6 +381,7 @@ i.far {
 }
 
 .choice:hover .fa-check-circle, .choice:active .fa-check-circle {
+  font-size: 22px;
   animation: rotate 0.5s ease-in-out forwards;
 }
 
@@ -615,6 +617,20 @@ header a:hover {
   background-color: white;
   box-shadow: 4px 4px 8px #e5e5e5;
   border-radius: 14px;
+}
+
+@media screen and (min-width: 376px) {
+  .resto__card {
+    width: 75vw;
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .resto__card {
+    width: 89.33vw;
+    max-width: 335px;
+  }
 }
 
 .resto__card img {

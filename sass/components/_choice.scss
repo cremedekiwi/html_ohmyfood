@@ -59,7 +59,7 @@
       width: 15.733vw;
       max-width: 59px;
       opacity: 1;
-      animation: reveal 0.3s forwards;
+      animation: 0.3s alternate reveal;
     }
     @keyframes rotate {
       0% {
@@ -70,6 +70,7 @@
       }
     }
     .fa-check-circle {
+      font-size: 22px;
       animation: rotate 0.5s ease-in-out forwards;
     }
   }
