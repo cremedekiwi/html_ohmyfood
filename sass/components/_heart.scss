@@ -1,3 +1,12 @@
+.fa-heart:hover {
+  font-family: fontawesome;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient($primary 20%, $secondary);
+  animation: pulse 0.8s ease-in-out infinite;
+  cursor: pointer;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -8,17 +17,4 @@
   100% {
     transform: scale(1);
   }
-}
-
-i.far {
-  font-size: 1.4rem;
-}
-
-.fa-heart:hover {
-  cursor: pointer;
-  font-family: fontawesome;
-  background-image: linear-gradient($primary 20%, $secondary);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: pulse 0.8s ease-in-out infinite;
 }
