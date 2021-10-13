@@ -612,7 +612,7 @@ header a:hover {
 }
 
 .resto__card {
-  width: 89.33vw;
+  width: 85vw;
   max-width: 335px;
   height: 251px;
   background-color: white;
@@ -622,14 +622,19 @@ header a:hover {
 
 @media screen and (min-width: 376px) {
   .resto__card {
-    width: 75vw;
+    width: 90vw;
     max-width: unset;
   }
 }
 
 @media screen and (min-width: 768px) {
   .resto__card {
-    width: 89.33vw;
+    width: 47vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .resto__card {
     max-width: 335px;
   }
 }

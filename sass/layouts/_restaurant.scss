@@ -23,19 +23,21 @@
     }
   }
   &__card {
-    width: 89.33vw;
+    width: 85vw;
     max-width: 335px;
     height: 251px;
     background-color: white;
     box-shadow: 4px 4px 8px #e5e5e5;
     border-radius: 14px;
     @media screen and (min-width: 376px) {
-      width: 75vw;
+      width: 90vw;
       max-width: unset;
     }
     @media screen and (min-width: $tablet) {
-      width: 89.33vw;
-    max-width: 335px;
+      width: 47vw;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 335px;
     }
     img {
       width: 100%;
