@@ -32,6 +32,9 @@
     }
     &--button:hover {
       background-color: #f5edff;
+      i {
+        color: $primary;
+      }
     }
     &--circle {
       position: absolute;
