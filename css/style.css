@@ -524,15 +524,15 @@ header a:hover {
 
 @media screen and (min-width: 768px) {
   .operation__w--button {
-    width: 220px;
+    width: 28vw;
     height: 60px;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1000px) {
   .operation__w--button {
     width: 85.86vw;
-    max-width: 322px;
+    max-width: 300px;
     height: 74px;
   }
 }
@@ -572,7 +572,7 @@ header a:hover {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1000px) {
   .operation__w i {
     padding-left: 0;
     padding-right: 20px;
@@ -604,11 +604,17 @@ header a:hover {
   gap: 18px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .resto__w {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .resto__w {
+    padding: 0 10px 0 10px;
   }
 }
 
@@ -628,9 +634,9 @@ header a:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .resto__card {
-    width: 47vw;
+    width: 46vw;
   }
 }
 
