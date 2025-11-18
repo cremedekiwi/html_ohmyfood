@@ -81,7 +81,6 @@ footer {
   max-width: 1440px;
   margin: auto;
 }
-
 @media screen and (min-width: 1025px) {
   header,
   main,
@@ -122,11 +121,9 @@ a {
   color: black;
   text-decoration: none;
 }
-
 a:visited {
   color: black;
 }
-
 a:hover {
   color: #9356dc;
 }
@@ -154,23 +151,19 @@ i.far {
   align-items: center;
   flex-direction: column;
   gap: 42px;
-  animation: loaderKick 0.3s ease forwards 3s;
 }
-
 .loader p {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
   font-size: 40px;
   animation: color 1.2s ease-in-out infinite;
 }
-
 .loader__color {
   width: 100px;
   height: 100px;
   position: relative;
   border-radius: 50%;
 }
-
 .loader__color div {
   box-sizing: border-box;
   position: absolute;
@@ -180,10 +173,12 @@ i.far {
   border-radius: 50%;
   animation: spinnerOne 1.2s linear infinite;
 }
-
 .loader__color div:nth-child(2) {
   border: 10px solid transparent;
   animation: spinnerTwo 1.2s linear infinite;
+}
+.loader {
+  animation: loaderKick 0.3s ease forwards 0s;
 }
 
 @keyframes spinnerOne {
@@ -203,7 +198,6 @@ i.far {
     border-top-color: #9356dc;
   }
 }
-
 @keyframes spinnerTwo {
   0% {
     transform: rotate(0deg);
@@ -221,7 +215,6 @@ i.far {
     border-bottom-color: #9356dc;
   }
 }
-
 @keyframes color {
   0% {
     color: #9356dc;
@@ -233,14 +226,12 @@ i.far {
     color: #9356dc;
   }
 }
-
 @keyframes loaderKick {
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-
 @keyframes invoke {
   0% {
     opacity: 0;
@@ -249,7 +240,6 @@ i.far {
     opacity: 1;
   }
 }
-
 .starter {
   animation: invoke 1s ease-in-out;
 }
@@ -269,7 +259,6 @@ i.far {
   color: white;
   border: 0;
 }
-
 .button:hover {
   filter: brightness(115%);
   box-shadow: 2px 2px 12px grey;
@@ -296,7 +285,6 @@ i.far {
     transform: scale(1);
   }
 }
-
 .choice {
   background-color: white;
   width: 93.066vw;
@@ -307,30 +295,25 @@ i.far {
   display: flex;
   flex-direction: row;
 }
-
 .choice__left {
   padding: 15px 0 0 11px;
   width: 80.266vw;
   max-width: 301px;
 }
-
 .choice__left p {
   margin-top: 10px;
 }
-
 .choice__left h3,
 .choice__left p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
 .choice__middle {
   width: 12.8vw;
   max-width: 48px;
   padding: 42px 22px 0 0;
 }
-
 .choice__right {
   opacity: 0;
   width: 0;
@@ -341,22 +324,18 @@ i.far {
   justify-content: center;
   align-items: center;
 }
-
 .choice__right .fa-check-circle {
   color: white;
 }
-
 .choice:hover .choice__left, .choice:active .choice__left {
   width: 60.266vw;
   max-width: 226px;
 }
-
 .choice:hover .choice__middle, .choice:active .choice__middle {
   width: 17.066vw;
   max-width: 64px;
   padding: 41px 22px 23px 16px;
 }
-
 @keyframes reveal {
   from {
     clip-path: inset(0 0 0 100%);
@@ -365,14 +344,12 @@ i.far {
     clip-path: inset(0 0 0 0);
   }
 }
-
 .choice:hover .choice__right, .choice:active .choice__right {
   width: 15.733vw;
   max-width: 59px;
   opacity: 1;
   animation: 0.3s reveal;
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -381,7 +358,6 @@ i.far {
     transform: rotate(360deg);
   }
 }
-
 .choice:hover .fa-check-circle, .choice:active .fa-check-circle {
   font-size: 22px;
   animation: rotate 0.5s ease-in-out forwards;
@@ -395,14 +371,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 header i {
   position: absolute;
   top: 26px;
   left: 23px;
   transform: scale(1.1, 1.1);
 }
-
 header a:hover {
   color: black;
 }
@@ -415,7 +389,6 @@ header a:hover {
   align-items: center;
   box-shadow: 4px 4px 8px #cfcfcf;
 }
-
 @media screen and (min-width: 1025px) {
   .h_box-shadow {
     box-shadow: none;
@@ -432,14 +405,12 @@ header a:hover {
   background-color: #eaeaea;
   color: #3a3a3a;
 }
-
 .explore__where i {
   width: 12px;
   height: 16px;
   color: #353535;
   margin-right: 18px;
 }
-
 .explore__where input {
   width: 110px;
   padding: 0;
@@ -448,15 +419,12 @@ header a:hover {
   background-color: transparent;
   border: none;
 }
-
 .explore__where input::placeholder {
   color: black;
 }
-
 .explore__where input:focus {
   outline: none;
 }
-
 .explore__book {
   display: flex;
   justify-content: center;
@@ -467,19 +435,16 @@ header a:hover {
   background-color: #f6f6f6;
   padding: 43px 0 57px 0;
 }
-
 .explore__book .explorer {
   width: 219px;
   height: 50px;
   font-size: 16px;
 }
-
 .explore__book h1 {
   font-weight: bold;
   font-size: 22px;
   padding: 0 81px 0 65px;
 }
-
 .explore__book p {
   padding: 0 31px 0 39px;
   font-size: 16px;
@@ -490,25 +455,23 @@ header a:hover {
   width: 100%;
   padding: 52px 0 68px 0;
 }
-
 .operation h2 {
   padding: 0 0 32px 21px;
 }
-
 .operation__w {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
 }
-
 @media screen and (min-width: 768px) {
   .operation__w {
     flex-direction: row;
   }
 }
-
+.operation__w {
+  gap: 25px;
+}
 .operation__w--button {
   position: relative;
   width: 85.86vw;
@@ -521,14 +484,12 @@ header a:hover {
   align-items: center;
   border-radius: 19px;
 }
-
 @media screen and (min-width: 768px) {
   .operation__w--button {
     width: 28vw;
     height: 60px;
   }
 }
-
 @media screen and (min-width: 1000px) {
   .operation__w--button {
     width: 85.86vw;
@@ -536,15 +497,12 @@ header a:hover {
     height: 74px;
   }
 }
-
 .operation__w--button:hover {
   background-color: #f5edff;
 }
-
 .operation__w--button:hover i {
   color: #9356dc;
 }
-
 .operation__w--circle {
   position: absolute;
   left: -10px;
@@ -558,20 +516,17 @@ header a:hover {
   align-items: center;
   font-size: 11px;
 }
-
 .operation__w i {
   padding-left: 0;
   padding-right: 20px;
   color: #7e7e7e;
 }
-
 @media screen and (min-width: 768px) {
   .operation__w i {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-
 @media screen and (min-width: 1000px) {
   .operation__w i {
     padding-left: 0;
@@ -584,26 +539,21 @@ header a:hover {
   padding: 58px 0 64px 0;
   background-color: #f6f6f6;
 }
-
 .resto h2 {
   padding: 0 0 27px 21px;
 }
-
 .resto h3 {
   font-weight: bold;
 }
-
 .resto a:hover {
   color: black;
 }
-
 .resto__w {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
 }
-
 @media screen and (min-width: 500px) {
   .resto__w {
     flex-direction: row;
@@ -611,13 +561,11 @@ header a:hover {
     justify-content: center;
   }
 }
-
 @media screen and (min-width: 900px) {
   .resto__w {
     padding: 0 8px 0 8px;
   }
 }
-
 .resto__card {
   width: 85vw;
   max-width: 335px;
@@ -626,39 +574,33 @@ header a:hover {
   box-shadow: 4px 4px 8px #e5e5e5;
   border-radius: 14px;
 }
-
 @media screen and (min-width: 376px) {
   .resto__card {
     width: 90vw;
     max-width: unset;
   }
 }
-
 @media screen and (min-width: 500px) {
   .resto__card {
     width: 46vw;
   }
 }
-
 @media screen and (min-width: 900px) {
   .resto__card {
     width: 23vw;
     max-width: 335px;
   }
 }
-
 .resto__card img {
   width: 100%;
   height: 174px;
   object-fit: cover;
   border-radius: 14px 14px 0 0;
 }
-
 .resto__card__img {
   display: block;
   position: relative;
 }
-
 .resto__card__new {
   width: 81px;
   height: 29px;
@@ -671,7 +613,6 @@ header a:hover {
   top: 13px;
   right: 11px;
 }
-
 .resto__info {
   display: flex;
   justify-content: space-between;
@@ -690,32 +631,26 @@ footer {
   background-color: #353535;
   color: white;
 }
-
 footer h4 {
   font-family: "Shrikhand", cursive;
   font-size: 16px;
   font-weight: 100;
   margin-bottom: 23px;
 }
-
 footer li {
   font-size: 14px;
   margin-bottom: 10px;
 }
-
 footer i {
   margin-right: 12px;
 }
-
 footer li a {
   color: white;
   text-decoration: none;
 }
-
 footer li a:visited {
   color: white;
 }
-
 footer li a:hover {
   color: #ff79da;
 }
@@ -723,13 +658,11 @@ footer li a:hover {
 .menu a:hover {
   color: black;
 }
-
 .menu img {
   width: 100%;
   height: 258px;
   object-fit: cover;
 }
-
 .menu__w {
   transform: translateY(-38px);
   margin-bottom: -38px;
@@ -741,31 +674,28 @@ footer li a:hover {
   flex-direction: column;
   align-items: center;
 }
-
 .menu__w__title {
   display: flex;
   justify-content: space-between;
   padding: 0 38px 0px 19px;
 }
-
 .menu__w__title--icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.4rem;
-  font-weight: 100;
 }
-
 @media screen and (min-width: 375px) {
   .menu h1 {
     font-size: 1.6rem;
   }
 }
-
+.menu h1 {
+  font-weight: 100;
+}
 .menu h2 {
   text-transform: uppercase;
   font-size: 14px;
@@ -775,30 +705,25 @@ footer li a:hover {
   border-bottom: 3px solid #99e2d0;
   width: 40px;
 }
-
 .menu .mealW {
   width: 93.066vw;
   max-width: 349px;
 }
-
 @media screen and (min-width: 768px) {
   .menu .mealW {
     width: 93.066vw;
     max-width: 708px;
   }
 }
-
 @media screen and (min-width: 1094px) {
   .menu .mealW {
     width: 93.066vw;
     max-width: 1067px;
   }
 }
-
 .menu h3 {
   font-weight: bold;
 }
-
 .menu p {
   font-size: 14px;
   font-weight: 100;
@@ -810,7 +735,6 @@ footer li a:hover {
   justify-content: center;
   align-items: center;
 }
-
 .order_w .order {
   width: 186px;
   height: 50px;
@@ -822,24 +746,23 @@ footer li a:hover {
   flex-direction: column;
   gap: 10px;
 }
-
 @media screen and (min-width: 768px) {
   .meal {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .meal {
     width: 93.066vw;
     max-width: 708px;
   }
 }
-
 @media screen and (min-width: 768px) and (min-width: 1094px) {
   .meal {
     width: 93.066vw;
     max-width: 1067px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
